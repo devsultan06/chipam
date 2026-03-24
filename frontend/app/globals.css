@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Syne:wght@400..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-green: #1a7a4a;
+  --mid-green: #2ea366;
+  --light-green-bg: #e6f5ed;
+  --lime-accent: #c8f275;
+  --dark-bg: #0d1f14;
+  --off-white-bg: #f7f5ef;
+  --warm-bg: #f0ebd8;
+  --body-text: #1a1a1a;
+  --muted-text: #6b7280;
+  --border-color: rgba(26, 122, 74, 0.12);
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--off-white-bg);
+  color: var(--body-text);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+}
+
+.font-fraunces {
+  font-family: "Fraunces", serif;
+}
+
+.text-tight {
+  letter-spacing: -4px;
+  line-height: 0.95;
+}
+
+/* Background Treatments */
+
+/* 1. Dot Grid */
+.bg-dot-grid {
+  background-color: #0d1f14;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.08) 1px,
+    transparent 1px
+  );
+  background-size: 24px 24px;
+}
+
+/* 2. Line Grid */
+.bg-line-grid {
+  background-color: #0d1f14;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* 3. Diagonal Stripes */
+.bg-diagonal-stripes {
+  background-color: #f7f5ef;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(26, 122, 74, 0.05) 10px,
+    rgba(26, 122, 74, 0.05) 11px
+  );
+}
+
+/* 4. Large Faded Grid */
+.bg-large-faded-grid {
+  background-color: #0d1f14;
+  background-image:
+    linear-gradient(rgba(200, 242, 117, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200, 242, 117, 0.04) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+/* 5. Noise Texture */
+.bg-noise {
+  background-color: #f7f5ef;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* 6. Radial Glow Center */
+.bg-radial-glow {
+  background-color: #1a7a4a;
+  background-image: radial-gradient(
+    ellipse 80% 50% at 50% 50%,
+    rgba(200, 242, 117, 0.15) 0%,
+    transparent 70%
+  );
+}
+
+/* 7. Corner Glow Blobs */
+.bg-corner-glow {
+  background-color: #0d1f14;
+  background-image:
+    radial-gradient(
+      ellipse 40% 40% at 10% 20%,
+      rgba(46, 163, 102, 0.15) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 30% 30% at 90% 80%,
+      rgba(200, 242, 117, 0.08) 0%,
+      transparent 60%
+    );
+}
+
+/* Utilities */
+.pill-button {
+  border-radius: 100px;
+  transition: all 0.3s ease;
+}
+
+.pill-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-card {
+  border-radius: 12px;
+}
+
+.section-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.pill-badge {
+  padding: 0.375rem 1rem;
+  border-radius: 100px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
