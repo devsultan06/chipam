@@ -40,7 +40,7 @@ export default function ForgotPasswordPage() {
 
               <h1
                 className="text-2xl font-black mb-4 text-[#1A1A1A]"
-                style={{ fontFamily: "Syne, sans-serif" }}
+                style={{ fontFamily: "Lexend, sans-serif" }}
               >
                 Forgot your password?
               </h1>
@@ -102,7 +102,7 @@ export default function ForgotPasswordPage() {
 
             <h1
               className="text-2xl font-black mb-4 text-[#1A1A1A]"
-              style={{ fontFamily: "Syne, sans-serif" }}
+              style={{ fontFamily: "Lexend, sans-serif" }}
             >
               Check your inbox
             </h1>

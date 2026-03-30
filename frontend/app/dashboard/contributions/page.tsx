@@ -131,8 +131,7 @@ export default function ContributionsList() {
           </div>
         </div>
 
-        {/* Contributions Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {filteredContributions.map((c, i) => {
             const statusColors = {
               Active: "bg-[#E6F5ED] text-[#1A7A4A]",
@@ -146,7 +145,7 @@ export default function ContributionsList() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-white rounded-[10px] p-8 border border-[rgba(26,122,74,0.1)] shadow-sm hover:shadow-xl transition-all group relative overflow-hidden"
+                className="bg-white rounded-[10px] p-6 md:p-8 border border-[rgba(26,122,74,0.1)] shadow-sm hover:shadow-xl transition-all group relative overflow-hidden"
               >
                 {/* Status Dot */}
                 <div className="absolute top-0 right-0 p-4">
@@ -160,7 +159,7 @@ export default function ContributionsList() {
                 <div className="mb-8">
                   <h3
                     className="text-2xl font-black text-[#1A1A1A] mb-8 leading-none"
-                    style={{ fontFamily: "Syne, sans-serif" }}
+                    style={{ fontFamily: "Lexend, sans-serif" }}
                   >
                     {c.name}
                   </h3>
@@ -173,7 +172,7 @@ export default function ContributionsList() {
                         </p>
                         <h4
                           className="text-3xl font-black text-[#1A1A1A] tracking-tighter"
-                          style={{ fontFamily: "Syne, sans-serif" }}
+                          style={{ fontFamily: "Lexend, sans-serif" }}
                         >
                           ₦{(c.collected / 1000).toFixed(1)}k
                           <span className="text-sm font-normal text-[#6B7280] tracking-normal ml-2 ">
@@ -238,7 +237,7 @@ export default function ContributionsList() {
             <div className="text-8xl mb-6">🏝️</div>
             <h3
               className="text-2xl font-black text-[#1A1A1A] mb-2"
-              style={{ fontFamily: "Syne, sans-serif" }}
+              style={{ fontFamily: "Lexend, sans-serif" }}
             >
               No {activeFilter} contributions
             </h3>

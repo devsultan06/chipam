@@ -183,44 +183,30 @@
 
                     <h1 class="banner-title"
                         style="color: #ffffff; font-size: 35px; font-weight: 500; margin: 30px 0 0 0; letter-spacing: -1px; line-height: 1.1;">
-                        <%= bannerTitle %>
+                        Verify your email
                     </h1>
                 </td>
             </tr>
             <!-- Content Section -->
             <tr>
                 <td class="content">
-                    <p class="greeting">Hi <%= username %>,</p>
+                    <p class="greeting">Hi Amaka Obi,</p>
 
                     <p class="intro-text">Welcome to the future of collection.</p>
                     <p class="message">
-                        <%= locals.messageText ? locals.messageText
-                            : 'No more spreadsheets. No more awkward WhatsApp chasing. You can now start collecting contributions, track payments live, and let us handle the reminders. Your group finance journey starts here.'
-                            %>
+                        Please verify your email address to secure your account and start collecting contributions effortlessly.
                     </p>
 
-                    <% if (locals.verificationCode) { %>
+                    
                         <div class="verification-box">
                             <p
                                 style="font-size: 12px; font-weight: 700; color: #6B7280; text-transform: uppercase; letter-spacing: 1px; margin-top: 0; margin-bottom: 12px;">
                                 Your code is:</p>
                             <p class="verification-code">
-                                <%= verificationCode %>
+                                492815
                             </p>
                         </div>
-                        <% } else if (locals.actionUrl && locals.actionLabel) { %>
-                            <div class="button-container" style="text-align: center; margin-bottom: 60px;">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0">
-                                    <tr>
-                                        <td align="center" style="background-color: #1A7A4A; border-radius: 10px;">
-                                            <a href="<%= actionUrl %>" class="button">
-                                                <%= actionLabel %>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <% } %>
+                        
                 </td>
             </tr>
             <!-- Footer Section -->

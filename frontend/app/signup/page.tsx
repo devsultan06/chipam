@@ -38,7 +38,7 @@ export default function SignupPage() {
         <div className="mb-10 text-center md:text-left">
           <h2
             className="text-3xl font-black mb-3 text-[#0D1F14]"
-            style={{ fontFamily: "Syne, sans-serif" }}
+            style={{ fontFamily: "Lexend, sans-serif" }}
           >
             Create your account
           </h2>

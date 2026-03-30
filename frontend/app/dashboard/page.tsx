@@ -94,7 +94,7 @@ export default function DashboardOverview() {
 
   return (
     <DashboardLayout title="Overview">
-      <div className="space-y-10">
+      <div className="space-y-6 md:space-y-10">
         {/* Stats Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, i) => (
@@ -115,7 +115,7 @@ export default function DashboardOverview() {
               </p>
               <h3
                 className="text-3xl font-black text-[#1A1A1A] tracking-tighter"
-                style={{ fontFamily: "Syne, sans-serif" }}
+                style={{ fontFamily: "Lexend, sans-serif" }}
               >
                 {stat.value}
               </h3>
@@ -127,14 +127,14 @@ export default function DashboardOverview() {
         <div className="space-y-6">
           <div className="flex items-center justify-between">
             <h2
-              className="text-xl font-black text-[#0D1F14] tracking-tight"
-              style={{ fontFamily: "Syne, sans-serif" }}
+              className="text-lg md:text-xl font-black text-[#0D1F14] tracking-tight"
+              style={{ fontFamily: "Lexend, sans-serif" }}
             >
               Recent Contributions
             </h2>
             <Link
               href="/dashboard/contributions"
-              className="text-sm font-bold text-[#1A7A4A] flex items-center gap-1 hover:underline"
+              className="text-xs md:text-sm font-bold text-[#1A7A4A] flex items-center gap-1 hover:underline"
             >
               View all <ChevronRight size={16} />
             </Link>
@@ -183,7 +183,7 @@ export default function DashboardOverview() {
                         key={i}
                         className={`transition-colors hover:bg-[#F7F5EF]/30 ${i % 2 !== 0 ? "bg-[#F7F5EF]/20" : ""}`}
                       >
-                        <td className="px-6 py-5">
+                        <td className="px-4 md:px-6 py-4 md:py-5">
                           <p className="text-sm font-black text-[#1A1A1A]">
                             {item.name}
                           </p>
@@ -191,7 +191,7 @@ export default function DashboardOverview() {
                             {item.deadline}
                           </p>
                         </td>
-                        <td className="px-6 py-5">
+                        <td className="hidden sm:table-cell px-6 py-5">
                           <span className="text-sm font-bold text-[#1A1A1A]">
                             {item.amount}
                           </span>
@@ -226,10 +226,10 @@ export default function DashboardOverview() {
                             {item.status}
                           </span>
                         </td>
-                        <td className="px-6 py-5">
+                        <td className="px-4 md:px-6 py-4 md:py-5 text-right">
                           <Link
                             href={`/dashboard/contributions/1`}
-                            className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-[#1A7A4A] border border-[#1A7A4A]/20 px-3 py-1.5 rounded-full hover:bg-[#1A7A4A] hover:text-white transition-all"
+                            className="inline-flex items-center gap-1.5 text-[10px] md:text-xs font-black uppercase tracking-widest text-[#1A7A4A] border border-[#1A7A4A]/20 px-3 py-1.5 rounded-full hover:bg-[#1A7A4A] hover:text-white transition-all whitespace-nowrap"
                           >
                             View <ArrowUpRight size={14} />
                           </Link>

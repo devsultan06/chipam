@@ -21,7 +21,7 @@ export default function LoginPage() {
         <div className="mb-10 text-center md:text-left">
           <h2
             className="text-3xl font-black mb-3 text-[#0D1F14]"
-            style={{ fontFamily: "Syne, sans-serif" }}
+            style={{ fontFamily: "Lexend, sans-serif" }}
           >
             Welcome back
           </h2>

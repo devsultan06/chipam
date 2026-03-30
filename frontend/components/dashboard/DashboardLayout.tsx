@@ -106,16 +106,16 @@ export default function DashboardLayout({
       {/* Main Content Area */}
       <div className="flex-1 md:ml-[260px] flex flex-col min-h-screen">
         {/* Top Bar */}
-        <header className="h-20 bg-[#F7F5EF]/80 backdrop-blur-md sticky top-0 z-30 px-6 md:px-10 flex items-center justify-between">
-          <div className="flex items-center gap-4">
+        <header className="h-16 md:h-20 bg-[#F7F5EF]/80 backdrop-blur-md sticky top-0 z-30 px-4 md:px-10 flex items-center justify-between">
+          <div className="flex items-center gap-3 md:gap-4">
             <button
-              className="md:hidden p-2 text-[#0D1F14]"
+              className="md:hidden p-2 text-[#0D1F14] -ml-2"
               onClick={() => setIsMobileMenuOpen(true)}
             >
-              <Menu size={24} />
+              <Menu size={20} />
             </button>
             <h1
-              className="text-xl md:text-2xl font-black text-[#0D1F14] tracking-tight"
+              className="text-lg md:text-2xl font-black text-[#0D1F14] tracking-tight truncate max-w-[150px] sm:max-w-none"
               style={{ fontFamily: "Syne, sans-serif" }}
             >
               {title}
@@ -124,9 +124,9 @@ export default function DashboardLayout({
 
           <button
             onClick={() => router.push("/dashboard/create")}
-            className="bg-[#1A7A4A] text-white px-5 py-2.5 rounded-[10px] text-xs font-bold flex items-center gap-2 hover:scale-[1.02] transition-all active:scale-[0.98]"
+            className="bg-[#1A7A4A] text-white px-4 md:px-5 py-2 md:py-2.5 rounded-[10px] text-[10px] md:text-xs font-bold flex items-center gap-2 hover:scale-[1.02] transition-all active:scale-[0.98]"
           >
-            <Plus size={18} />
+            <Plus size={16} />
             <span className="hidden sm:inline">New Contribution</span>
             <span className="sm:hidden">New</span>
           </button>

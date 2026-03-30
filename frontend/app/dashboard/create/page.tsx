@@ -49,15 +49,15 @@ export default function CreateContribution() {
           <ArrowLeft size={16} /> Back to dashboard
         </Link>
 
-        <div className="bg-white rounded-[10px] p-8 md:p-12 shadow-2xl shadow-[rgba(0,0,0,0.05)] border border-[rgba(26,122,74,0.1)] relative overflow-hidden">
-          <div className="mb-12">
+        <div className="bg-white rounded-[10px] p-6 md:p-12 shadow-2xl shadow-[rgba(0,0,0,0.05)] border border-[rgba(26,122,74,0.1)] relative overflow-hidden">
+          <div className="mb-8 md:mb-12">
             <h1
-              className="text-3xl md:text-4xl font-black text-[#1A1A1A] mb-4 tracking-tighter"
-              style={{ fontFamily: "Syne, sans-serif" }}
+              className="text-2xl md:text-4xl font-black text-[#1A1A1A] mb-3 md:mb-4 tracking-tighter"
+              style={{ fontFamily: "Lexend, sans-serif" }}
             >
               New Contribution
             </h1>
-            <p className="text-[#6B7280] font-medium text-sm max-w-md">
+            <p className="text-[#6B7280] font-medium text-[13px] md:text-sm max-w-md">
               Fill in the details below to start collecting. You'll get a
               shareable link instantly.
             </p>
@@ -193,7 +193,7 @@ export default function CreateContribution() {
                     <div>
                       <h4
                         className="text-2xl font-black text-[#0D1F14] tracking-tighter"
-                        style={{ fontFamily: "Syne, sans-serif" }}
+                        style={{ fontFamily: "Lexend, sans-serif" }}
                       >
                         ₦{targetAmount.toLocaleString()}
                       </h4>
@@ -203,7 +203,7 @@ export default function CreateContribution() {
                     </div>
                     <div className="text-right">
                       <p className="text-sm font-black text-[#0D1F14]">₦50</p>
-                      <p className="text-[10px] text-[#6B7280] font-bold italic">
+                      <p className="text-[10px] text-[#6B7280] font-bold">
                         Fee / pay
                       </p>
                     </div>

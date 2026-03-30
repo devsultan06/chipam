@@ -108,7 +108,7 @@ export default function ContributionDetail() {
 
   return (
     <DashboardLayout title="Contribution Detail">
-      <div className="space-y-10 max-w-6xl mx-auto">
+      <div className="space-y-6 md:space-y-10 max-w-6xl mx-auto">
         {/* Breadcrumb & Navigation */}
         <div className="flex items-center justify-between">
           <Link
@@ -131,7 +131,7 @@ export default function ContributionDetail() {
         </div>
 
         {/* Hero Card */}
-        <div className="bg-white rounded-[10px] p-8 md:p-12 shadow-xl shadow-[rgba(0,0,0,0.05)] border border-[rgba(26,122,74,0.1)] relative overflow-hidden">
+        <div className="bg-white rounded-[10px] p-6 md:p-12 shadow-xl shadow-[rgba(0,0,0,0.05)] border border-[rgba(26,122,74,0.1)] relative overflow-hidden">
           {/* Subtle Glow Blob */}
           <div className="absolute top-[-50px] right-[-50px] w-64 h-64 bg-[#C8F275]/10 rounded-full blur-[80px] -z-0" />
 
@@ -142,8 +142,8 @@ export default function ContributionDetail() {
                   Active
                 </span>
                 <h1
-                  className="text-4xl md:text-5xl font-black text-[#1A1A1A] mb-6 tracking-tighter leading-none"
-                  style={{ fontFamily: "Syne, sans-serif" }}
+                  className="text-3xl md:text-5xl font-black text-[#1A1A1A] mb-4 md:mb-6 tracking-tighter leading-none"
+                  style={{ fontFamily: "Lexend, sans-serif" }}
                 >
                   {contribution.name}
                 </h1>
@@ -212,7 +212,7 @@ export default function ContributionDetail() {
         </div>
 
         {/* Share Section */}
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 items-center bg-[#0D1F14] rounded-[10px] p-8 border border-white/5 relative overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 md:gap-6 items-center bg-[#0D1F14] rounded-[10px] p-6 md:p-8 border border-white/5 relative overflow-hidden">
           {/* Tile Grid Effect */}
           <div
             className="absolute inset-0 opacity-[0.03]"
@@ -225,7 +225,7 @@ export default function ContributionDetail() {
           <div className="relative z-10">
             <h3
               className="text-xl font-black text-[#C8F275] mb-2 leading-none uppercase tracking-widest text-sm"
-              style={{ fontFamily: "Syne, sans-serif" }}
+              style={{ fontFamily: "Lexend, sans-serif" }}
             >
               Collect Payments
             </h3>
@@ -316,19 +316,19 @@ export default function ContributionDetail() {
                 <table className="w-full text-left">
                   <thead>
                     <tr className="border-b border-[rgba(26,122,74,0.08)] bg-[#F7F5EF]/50">
-                      <th className="px-8 py-6 text-[10px] font-black uppercase tracking-widest text-[#6B7280]">
+                      <th className="px-6 md:px-8 py-5 md:py-6 text-[10px] font-black uppercase tracking-widest text-[#6B7280]">
                         Name
                       </th>
-                      <th className="px-8 py-6 text-[10px] font-black uppercase tracking-widest text-[#6B7280]">
+                      <th className="hidden lg:table-cell px-8 py-6 text-[10px] font-black uppercase tracking-widest text-[#6B7280]">
                         Email
                       </th>
-                      <th className="px-8 py-6 text-[10px] font-black uppercase tracking-widest text-[#6B7280]">
+                      <th className="px-6 md:px-8 py-5 md:py-6 text-[10px] font-black uppercase tracking-widest text-[#6B7280]">
                         Amount
                       </th>
-                      <th className="px-8 py-6 text-[10px] font-black uppercase tracking-widest text-[#6B7280]">
+                      <th className="px-6 md:px-8 py-5 md:py-6 text-[10px] font-black uppercase tracking-widest text-[#6B7280]">
                         Status
                       </th>
-                      <th className="px-8 py-6 text-[10px] font-black uppercase tracking-widest text-[#6B7280]">
+                      <th className="hidden sm:table-cell px-8 py-6 text-[10px] font-black uppercase tracking-widest text-[#6B7280]">
                         Date Paid
                       </th>
                       <th className="px-8 py-6 text-[10px] font-black uppercase tracking-widest text-[#6B7280]">
@@ -342,7 +342,7 @@ export default function ContributionDetail() {
                         key={i}
                         className="hover:bg-[#F7F5EF]/30 transition-colors"
                       >
-                        <td className="px-8 py-6">
+                        <td className="px-6 md:px-8 py-5 md:py-6">
                           <div className="flex items-center gap-3">
                             <div
                               className={`w-8 h-8 rounded-[8px] flex items-center justify-center font-black text-[10px] ${member.status === "Paid" ? "bg-[#E6F5ED] text-[#1A7A4A]" : "bg-[#F0EBD8] text-[#D97706]"}`}
@@ -354,24 +354,24 @@ export default function ContributionDetail() {
                             </span>
                           </div>
                         </td>
-                        <td className="px-8 py-6">
+                        <td className="hidden lg:table-cell px-8 py-6">
                           <span className="text-sm font-medium text-[#6B7280]">
                             {member.email}
                           </span>
                         </td>
-                        <td className="px-8 py-6">
+                        <td className="px-6 md:px-8 py-5 md:py-6">
                           <span className="text-sm font-black text-[#1A1A1A]">
                             ₦{member.amount.toLocaleString()}
                           </span>
                         </td>
-                        <td className="px-8 py-6">
+                        <td className="px-6 md:px-8 py-5 md:py-6">
                           <span
                             className={`px-3 py-1.5 rounded-[10px] text-[10px] font-black uppercase tracking-widest shadow-sm ${member.status === "Paid" ? "bg-[#E6F5ED] text-[#1A7A4A]" : "bg-[#F0EBD8] text-[#D97706]"}`}
                           >
                             {member.status}
                           </span>
                         </td>
-                        <td className="px-8 py-6">
+                        <td className="hidden sm:table-cell px-8 py-6">
                           <p className="text-sm font-medium text-[#6B7280]">
                             {member.date}
                           </p>
@@ -413,7 +413,7 @@ export default function ContributionDetail() {
               </div>
               <h3
                 className="text-3xl font-black text-[#0D1F14] mb-8 tracking-tighter"
-                style={{ fontFamily: "Syne, sans-serif" }}
+                style={{ fontFamily: "Lexend, sans-serif" }}
               >
                 ₦105,000 collected
               </h3>
@@ -436,13 +436,13 @@ export default function ContributionDetail() {
                 <div className="flex justify-between items-center py-6">
                   <span
                     className="text-lg font-black text-[#0D1F14]"
-                    style={{ fontFamily: "Syne, sans-serif" }}
+                    style={{ fontFamily: "Lexend, sans-serif" }}
                   >
                     Your Payout
                   </span>
                   <span
                     className="text-2xl font-black text-[#1A7A4A]"
-                    style={{ fontFamily: "Syne, sans-serif" }}
+                    style={{ fontFamily: "Lexend, sans-serif" }}
                   >
                     ₦104,650.00
                   </span>

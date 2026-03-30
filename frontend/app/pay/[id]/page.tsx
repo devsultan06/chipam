@@ -65,7 +65,7 @@ export default function PublicPaymentPage({
           <Link
             href="/"
             className="inline-block text-[#1A7A4A] font-black text-3xl tracking-tighter mb-4"
-            style={{ fontFamily: "Syne, sans-serif" }}
+            style={{ fontFamily: "Lexend, sans-serif" }}
           >
             chipam
           </Link>
@@ -76,7 +76,7 @@ export default function PublicPaymentPage({
           <div className="p-8 md:p-12 border-b border-[rgba(26,122,74,0.08)] bg-white">
             <h1
               className="text-3xl md:text-4xl font-black text-[#1A1A1A] mb-4 tracking-tighter text-balance"
-              style={{ fontFamily: "Syne, sans-serif" }}
+              style={{ fontFamily: "Lexend, sans-serif" }}
             >
               {contribution.name}
             </h1>
@@ -104,7 +104,7 @@ export default function PublicPaymentPage({
                 </p>
                 <h2
                   className="text-4xl font-black text-[#1A1A1A] tracking-tighter"
-                  style={{ fontFamily: "Syne, sans-serif" }}
+                  style={{ fontFamily: "Lexend, sans-serif" }}
                 >
                   ₦{contribution.collected.toLocaleString()}
                   <span className="text-sm font-normal text-[#6B7280] ml-2 opacity-50 tracking-normal">
@@ -181,7 +181,7 @@ export default function PublicPaymentPage({
                 </p>
                 <p
                   className="text-4xl font-black text-white tracking-tighter"
-                  style={{ fontFamily: "Syne, sans-serif" }}
+                  style={{ fontFamily: "Lexend, sans-serif" }}
                 >
                   ₦{contribution.amount.toLocaleString()}
                 </p>

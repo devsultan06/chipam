@@ -45,7 +45,7 @@ export default function SettingsPage() {
           <div className="text-center md:text-left relative z-10">
             <h2
               className="text-3xl font-black text-[#1A1A1A] mb-2 tracking-tighter"
-              style={{ fontFamily: "Syne, sans-serif" }}
+              style={{ fontFamily: "Lexend, sans-serif" }}
             >
               Amaka Obi
             </h2>

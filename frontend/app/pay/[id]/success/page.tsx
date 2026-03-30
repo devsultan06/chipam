@@ -23,7 +23,7 @@ export default function PaymentSuccessPage({
         <Link
           href="/"
           className="inline-block text-[#1A7A4A] font-black text-3xl tracking-tighter mb-4"
-          style={{ fontFamily: "Syne, sans-serif" }}
+          style={{ fontFamily: "Lexend, sans-serif" }}
         >
           chipam
         </Link>
@@ -50,7 +50,7 @@ export default function PaymentSuccessPage({
           >
             <h1
               className="text-3xl font-black text-[#1A1A1A] mb-4 tracking-tighter"
-              style={{ fontFamily: "Syne, sans-serif" }}
+              style={{ fontFamily: "Lexend, sans-serif" }}
             >
               Payment Received!
             </h1>
