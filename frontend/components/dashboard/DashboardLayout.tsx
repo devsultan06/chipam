@@ -58,7 +58,7 @@ export default function DashboardLayout({
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all group ${
+                  className={`flex items-center gap-3 px-4 py-3 rounded-[10px] transition-all group ${
                     isActive
                       ? "bg-white/10 text-[#C8F275] border-l-4 border-[#C8F275] rounded-l-none"
                       : "text-white/50 hover:text-white hover:bg-white/5"
@@ -82,8 +82,8 @@ export default function DashboardLayout({
         </div>
 
         <div className="p-4 border-t border-white/5">
-          <div className="flex items-center gap-3 p-3 rounded-2xl bg-white/5 mb-4">
-            <div className="w-10 h-10 rounded-full bg-[#1A7A4A] flex items-center justify-center text-white font-black text-xs">
+          <div className="flex items-center gap-3 p-3 rounded-[10px] bg-white/5 mb-4">
+            <div className="w-10 h-10 rounded-[8px] bg-[#1A7A4A] flex items-center justify-center text-white font-black text-xs">
               AO
             </div>
             <div className="overflow-hidden">
@@ -95,7 +95,7 @@ export default function DashboardLayout({
           </div>
           <button
             onClick={() => router.push("/")}
-            className="flex items-center gap-3 w-full px-4 py-3 text-white/50 hover:text-[#FF3B30] hover:bg-[#FF3B30]/10 rounded-xl transition-all group"
+            className="flex items-center gap-3 w-full px-4 py-3 text-white/50 hover:text-[#FF3B30] hover:bg-[#FF3B30]/10 rounded-[10px] transition-all group"
           >
             <LogOut size={18} />
             <span className="text-xs font-bold">Logout</span>
@@ -124,7 +124,7 @@ export default function DashboardLayout({
 
           <button
             onClick={() => router.push("/dashboard/create")}
-            className="pill-button bg-[#1A7A4A] text-white px-5 py-2.5 text-xs font-bold flex items-center gap-2 shadow-lg shadow-[#1A7A4A]/20 hover:scale-[1.02] transition-all active:scale-[0.98]"
+            className="bg-[#1A7A4A] text-white px-5 py-2.5 rounded-[10px] text-xs font-bold flex items-center gap-2 hover:scale-[1.02] transition-all active:scale-[0.98]"
           >
             <Plus size={18} />
             <span className="hidden sm:inline">New Contribution</span>
@@ -178,7 +178,7 @@ export default function DashboardLayout({
                         key={item.name}
                         href={item.href}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className={`flex items-center gap-3 px-4 py-4 rounded-xl ${
+                        className={`flex items-center gap-3 px-4 py-4 rounded-[10px] ${
                           isActive
                             ? "bg-[#C8F275] text-[#0D1F14]"
                             : "text-white/50"
@@ -195,8 +195,8 @@ export default function DashboardLayout({
               </div>
 
               <div>
-                <div className="flex items-center gap-3 p-4 rounded-2xl bg-white/5 mb-6">
-                  <div className="w-12 h-12 rounded-full bg-[#1A7A4A] flex items-center justify-center text-white font-black">
+                <div className="flex items-center gap-3 p-4 rounded-[10px] bg-white/5 mb-6">
+                  <div className="w-12 h-12 rounded-[8px] bg-[#1A7A4A] flex items-center justify-center text-white font-black">
                     AO
                   </div>
                   <div>
@@ -208,7 +208,7 @@ export default function DashboardLayout({
                 </div>
                 <button
                   onClick={() => router.push("/")}
-                  className="flex items-center gap-3 w-full px-4 py-4 text-[#FF3B30] bg-[#FF3B30]/10 rounded-xl"
+                  className="flex items-center gap-3 w-full px-4 py-4 text-[#FF3B30] bg-[#FF3B30]/10 rounded-[10px]"
                 >
                   <LogOut size={20} />
                   <span className="font-bold">Logout</span>

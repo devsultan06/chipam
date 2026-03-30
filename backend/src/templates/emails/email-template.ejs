@@ -9,7 +9,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #EEFFEB;
+            background-color: #F7F5EF;
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             -webkit-font-smoothing: antialiased;
         }
@@ -17,7 +17,7 @@
         .wrapper {
             width: 100%;
             table-layout: fixed;
-            background-color: #EEFFEB;
+            background-color: #F7F5EF;
             padding-bottom: 40px;
             padding-top: 40px;
         }
@@ -28,14 +28,13 @@
             width: 100%;
             max-width: 600px;
             border-spacing: 0;
-            border-radius: 40px;
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.02);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
         }
 
         .banner {
-            background-color: #58B947;
-            background: linear-gradient(135deg, #58B947 0%, #4FA33F 100%);
+            background-color: #0D1F14;
             padding: 60px 40px;
             text-align: center;
             position: relative;
@@ -93,14 +92,16 @@
 
         .button {
             display: inline-block;
-            background-color: #58B947;
+            background-color: #1A7A4A;
             border: none;
             color: #ffffff !important;
-            padding: 15px 40px;
+            padding: 16px 40px;
             border-radius: 10px;
             text-decoration: none;
-            font-weight: 500;
-            font-size: 18px;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         /* Footer Links and Contact */
@@ -118,9 +119,9 @@
         }
 
         .footer-link {
-            color: #58B947;
+            color: #1A7A4A;
             text-decoration: none;
-            font-weight: 400;
+            font-weight: 600;
         }
 
         .whatsapp-number {
@@ -158,20 +159,11 @@
                     <!-- Content Table for Banner -->
                     <table width="100%" cellpadding="0" cellspacing="0" border="0">
                         <tr>
-                            <!-- Left Confetti -->
-                            <td width="100" align="left" valign="top">
-                                <img src="https://res.cloudinary.com/dpcelz9ln/image/upload/v1774049395/image_22_pnvirs.png"
-                                    alt="" width="100" style="display: block; border: 0;">
-                            </td>
                             <!-- Center Logo -->
                             <td align="center" valign="middle">
-                                <img src="https://res.cloudinary.com/dpcelz9ln/image/upload/v1774048840/Frame_2_1_c0idnn.png"
-                                    alt="OneGrowth" height="48" style="display: block; margin: 0 auto; border: 0;">
-                            </td>
-                            <!-- Right Confetti -->
-                            <td width="100" align="right" valign="bottom">
-                                <img src="https://res.cloudinary.com/dpcelz9ln/image/upload/v1774049431/image_23_emnmz7.png"
-                                    alt="" width="100" style="display: block; border: 0;">
+                                <div
+                                    style="font-family: 'Syne', sans-serif; font-size: 32px; font-weight: 900; color: #C8F275; letter-spacing: -2px;">
+                                    chipam</div>
                             </td>
                         </tr>
                     </table>
@@ -187,17 +179,19 @@
                 <td class="content">
                     <p class="greeting">Hi <%= username %>,</p>
 
-                    <p class="intro-text">Your account has been successfully created.</p>
+                    <p class="intro-text">Welcome to the future of collection.</p>
                     <p class="message">
-                        You can now access the platform and begin using tools designed to help you think clearly, stay
-                        consistent and make meaningful progress.
+                        No more spreadsheets. No more awkward WhatsApp chasing.
+                        You can now start collecting contributions, track payments live, and let us handle the
+                        reminders.
+                        Your group finance journey starts here.
                     </p>
 
                     <div class="button-container">
                         <!-- Using a table here for better button rendering in cross-platform clients -->
                         <table align="center" border="0" cellpadding="0" cellspacing="0">
                             <tr>
-                                <td align="center" style="background-color: #58B947; border-radius: 12px;">
+                                <td align="center" style="background-color: #1A7A4A; border-radius: 10px;">
                                     <a href="<%= actionUrl %>" class="button">
                                         <%= actionLabel %>
                                     </a>
@@ -210,13 +204,13 @@
             <!-- Footer Section -->
             <tr>
                 <td class="footer">
-                    <p>If you have any issues, kindly contact us at
-                        <a href="mailto:support@onegrowth.com" class="footer-link">support@onegrowth.com</a>
+                    <p>Issues? Contact us at
+                        <a href="mailto:hello@chipam.com" class="footer-link">hello@chipam.com</a>
                     </p>
                     <p>
-                        or send us a WhatsApp message at
-                        <span class="whatsapp-number"><a href="https://wa.me/2348050640810" class="footer-link">+234 805
-                                064 0810</a></span>
+                        or chat with us on WhatsApp
+                        <span class="whatsapp-number"><a href="https://wa.me/234800CHIPAM" class="footer-link">+234 800
+                                CHIPAM</a></span>
                     </p>
                 </td>
             </tr>

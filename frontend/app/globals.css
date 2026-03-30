@@ -124,13 +124,12 @@ h6 {
 
 /* Utilities */
 .pill-button {
-  border-radius: 100px;
+  border-radius: 10px;
   transition: all 0.3s ease;
 }
 
 .pill-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
 }
 
 .rounded-card {

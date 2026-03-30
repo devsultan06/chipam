@@ -35,11 +35,11 @@ export default function SettingsPage() {
     <DashboardLayout title="Settings">
       <div className="max-w-4xl mx-auto space-y-12">
         {/* Profile Header */}
-        <div className="flex flex-col md:flex-row items-center gap-8 bg-white rounded-[40px] p-10 border border-[rgba(26,122,74,0.1)] shadow-xl shadow-[rgba(0,0,0,0.03)] overflow-hidden relative">
+        <div className="flex flex-col md:flex-row items-center gap-8 bg-white rounded-[10px] p-10 border border-[rgba(26,122,74,0.1)] shadow-xl shadow-[rgba(0,0,0,0.03)] overflow-hidden relative">
           {/* Subtle Branded Glow */}
           <div className="absolute top-0 right-0 w-32 h-full bg-[#1A7A4A]/5 rotate-12 -z-0" />
 
-          <div className="relative z-10 w-24 h-24 rounded-[32px] bg-[#E6F5ED] flex items-center justify-center text-[#1A7A4A] border-4 border-white shadow-xl">
+          <div className="relative z-10 w-24 h-24 rounded-[10px] bg-[#E6F5ED] flex items-center justify-center text-[#1A7A4A] border-4 border-white shadow-xl">
             <span className="text-3xl font-black">AO</span>
           </div>
           <div className="text-center md:text-left relative z-10">
@@ -71,9 +71,9 @@ export default function SettingsPage() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center gap-3 px-6 py-4 rounded-2xl text-xs font-black uppercase tracking-widest transition-all ${
+                className={`flex items-center gap-3 px-6 py-4 rounded-[10px] text-xs font-black uppercase tracking-widest transition-all ${
                   activeTab === tab.id
-                    ? "bg-[#1A7A4A] text-white shadow-xl shadow-[#1A7A4A]/20"
+                    ? "bg-[#1A7A4A] text-white"
                     : "text-[#6B7280] hover:bg-white hover:text-[#1A1A1A] border border-transparent hover:border-[rgba(26,122,74,0.1)]"
                 }`}
               >
@@ -84,7 +84,7 @@ export default function SettingsPage() {
           </nav>
 
           {/* Form Content */}
-          <div className="bg-white rounded-[40px] p-10 border border-[rgba(26,122,74,0.1)] shadow-xl shadow-[rgba(0,0,0,0.03)] min-h-[500px] flex flex-col justify-between overflow-hidden relative">
+          <div className="bg-white rounded-[10px] p-10 border border-[rgba(26,122,74,0.1)] shadow-xl shadow-[rgba(0,0,0,0.03)] min-h-[500px] flex flex-col justify-between overflow-hidden relative">
             <AnimatePresence mode="wait">
               {activeTab === "profile" && (
                 <motion.div
@@ -104,7 +104,7 @@ export default function SettingsPage() {
                       </label>
                       <input
                         defaultValue="Amaka Obi"
-                        className="w-full bg-[#F7F5EF] border-none rounded-2xl py-4 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
+                        className="w-full bg-[#F7F5EF] border-none rounded-[10px] py-4 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
                       />
                     </div>
                     <div className="space-y-2">
@@ -114,7 +114,7 @@ export default function SettingsPage() {
                       <input
                         disabled
                         defaultValue="amaka@ui.edu.ng"
-                        className="w-full bg-[#F7F5EF]/50 border-none rounded-2xl py-4 px-6 text-sm font-bold text-[#6B7280] opacity-60 outline-none cursor-not-allowed"
+                        className="w-full bg-[#F7F5EF]/50 border-none rounded-[10px] py-4 px-6 text-sm font-bold text-[#6B7280] opacity-60 outline-none cursor-not-allowed"
                       />
                       <p className="text-[10px] font-bold text-[#6B7280] opacity-50 flex items-center gap-1.5">
                         <AlertCircle size={10} /> Email changes require
@@ -127,9 +127,9 @@ export default function SettingsPage() {
                         Notifications
                       </h4>
                       <div className="space-y-4">
-                        <div className="flex items-center justify-between p-4 bg-[#F7F5EF]/50 rounded-2xl">
+                        <div className="flex items-center justify-between p-4 bg-[#F7F5EF]/50 rounded-[10px]">
                           <div className="flex items-center gap-3">
-                            <div className="p-2 bg-white rounded-xl shadow-sm">
+                            <div className="p-2 bg-white rounded-[10px] shadow-sm">
                               <Bell size={16} className="text-[#1A7A4A]" />
                             </div>
                             <span className="text-sm font-bold text-[#1A1A1A]">
@@ -164,7 +164,7 @@ export default function SettingsPage() {
                       </label>
                       <input
                         type="password"
-                        className="w-full bg-[#F7F5EF] border-none rounded-2xl py-4 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
+                        className="w-full bg-[#F7F5EF] border-none rounded-[10px] py-4 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
                       />
                     </div>
                     <div className="space-y-2">
@@ -173,7 +173,7 @@ export default function SettingsPage() {
                       </label>
                       <input
                         type="password"
-                        className="w-full bg-[#F7F5EF] border-none rounded-2xl py-4 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
+                        className="w-full bg-[#F7F5EF] border-none rounded-[10px] py-4 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
                       />
                     </div>
                   </div>
@@ -191,7 +191,7 @@ export default function SettingsPage() {
                   <h3 className="text-xl font-black text-[#1A1A1A] mb-8 uppercase tracking-widest text-xs">
                     Payout Details
                   </h3>
-                  <div className="p-6 bg-[#F0EBD8] rounded-3xl border border-[#D97706]/20 mb-10 flex gap-4">
+                  <div className="p-6 bg-[#F0EBD8] rounded-[10px] border border-[#D97706]/20 mb-10 flex gap-4">
                     <AlertCircle
                       size={24}
                       className="text-[#D97706] shrink-0"
@@ -207,7 +207,7 @@ export default function SettingsPage() {
                         <label className="text-[10px] font-black uppercase tracking-widest text-[#6B7280]">
                           Bank Name
                         </label>
-                        <select className="w-full bg-[#F7F5EF] border-none rounded-2xl py-4 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all">
+                        <select className="w-full bg-[#F7F5EF] border-none rounded-[10px] py-4 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all">
                           <option>Select Bank</option>
                           <option>Access Bank</option>
                           <option>GTBank</option>
@@ -222,7 +222,7 @@ export default function SettingsPage() {
                         <input
                           type="text"
                           placeholder="e.g. 0123456789"
-                          className="w-full bg-[#F7F5EF] border-none rounded-2xl py-4 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
+                          className="w-full bg-[#F7F5EF] border-none rounded-[10px] py-4 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
                         />
                       </div>
                     </div>
@@ -248,7 +248,7 @@ export default function SettingsPage() {
                 )}
                 <button
                   onClick={handleSave}
-                  className="pill-button bg-[#0D1F14] text-[#C8F275] px-10 py-4 font-bold text-sm shadow-xl active:scale-[0.98] transition-all w-full sm:w-auto"
+                  className="bg-[#0D1F14] text-[#C8F275] px-10 py-4 rounded-[10px] font-bold text-sm active:scale-[0.98] transition-all w-full sm:w-auto"
                 >
                   Save Changes
                 </button>

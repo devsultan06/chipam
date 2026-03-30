@@ -103,12 +103,12 @@ export default function DashboardOverview() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
-              className="bg-white rounded-[24px] p-6 border border-[rgba(26,122,74,0.12)] shadow-sm hover:shadow-md transition-all group"
+              className="bg-white rounded-[10px] p-6 border border-[rgba(26,122,74,0.12)] shadow-sm hover:shadow-md transition-all group"
             >
               <div
-                className={`w-10 h-10 ${stat.bg} ${stat.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}
+                className={`w-12 h-12 ${stat.bg} ${stat.color} rounded-[10px] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}
               >
-                <stat.icon size={20} />
+                <stat.icon size={24} />
               </div>
               <p className="text-[#6B7280] text-xs font-black uppercase tracking-widest mb-1">
                 {stat.label}
@@ -144,7 +144,7 @@ export default function DashboardOverview() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="bg-white rounded-[32px] border border-[rgba(26,122,74,0.12)] overflow-hidden shadow-sm"
+            className="bg-white rounded-[10px] border border-[rgba(26,122,74,0.12)] overflow-hidden shadow-sm"
           >
             <div className="overflow-x-auto">
               <table className="w-full text-left">
@@ -159,7 +159,7 @@ export default function DashboardOverview() {
                     <th className="px-6 py-5 text-[10px] font-black uppercase tracking-widest text-[#6B7280]">
                       Collected
                     </th>
-                    <th className="px-6 py-5 text-[10px) font-black uppercase tracking-widest text-[#6B7280]">
+                    <th className="px-6 py-5 text-[10px] font-black uppercase tracking-widest text-[#6B7280]">
                       Progress
                     </th>
                     <th className="px-6 py-5 text-[10px] font-black uppercase tracking-widest text-[#6B7280]">

@@ -55,7 +55,7 @@ export default function SignupPage() {
             <input
               type="text"
               placeholder="e.g. Amaka Obi"
-              className="w-full bg-white border border-[rgba(0,0,0,0.1)] rounded-xl px-4 py-3.5 text-sm focus:ring-2 focus:ring-[#1A7A4A] focus:border-[#1A7A4A] outline-none transition-all placeholder:text-[#6B7280]/40"
+              className="w-full bg-white border border-[rgba(0,0,0,0.1)] rounded-[10px] px-4 py-3.5 text-sm focus:ring-2 focus:ring-[#1A7A4A] focus:border-[#1A7A4A] outline-none transition-all placeholder:text-[#6B7280]/40"
               autoFocus
             />
           </div>
@@ -67,7 +67,7 @@ export default function SignupPage() {
             <input
               type="email"
               placeholder="you@example.com"
-              className="w-full bg-white border border-[rgba(0,0,0,0.1)] rounded-xl px-4 py-3.5 text-sm focus:ring-2 focus:ring-[#1A7A4A] focus:border-[#1A7A4A] outline-none transition-all placeholder:text-[#6B7280]/40"
+              className="w-full bg-white border border-[rgba(0,0,0,0.1)] rounded-[10px] px-4 py-3.5 text-sm focus:ring-2 focus:ring-[#1A7A4A] focus:border-[#1A7A4A] outline-none transition-all placeholder:text-[#6B7280]/40"
             />
           </div>
 
@@ -81,7 +81,7 @@ export default function SignupPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Min. 8 characters"
-                className="w-full bg-white border border-[rgba(0,0,0,0.1)] rounded-xl px-4 py-3.5 text-sm focus:ring-2 focus:ring-[#1A7A4A] focus:border-[#1A7A4A] outline-none transition-all placeholder:text-[#6B7280]/40"
+                className="w-full bg-white border border-[rgba(0,0,0,0.1)] rounded-[10px] px-4 py-3.5 text-sm focus:ring-2 focus:ring-[#1A7A4A] focus:border-[#1A7A4A] outline-none transition-all placeholder:text-[#6B7280]/40"
               />
               <button
                 type="button"
@@ -99,7 +99,7 @@ export default function SignupPage() {
                   {[0, 1, 2, 3].map((i) => (
                     <div
                       key={i}
-                      className={`flex-1 rounded-full transition-colors ${i <= strength ? strengthColors[strength] : "bg-[rgba(0,0,0,0.05)]"}`}
+                      className={`flex-1 rounded-[10px] transition-colors ${i <= strength ? strengthColors[strength] : "bg-[rgba(0,0,0,0.05)]"}`}
                     />
                   ))}
                 </div>
@@ -118,12 +118,12 @@ export default function SignupPage() {
               <input
                 type={showPassword ? "text" : "password"}
                 placeholder="Repeat your password"
-                className="w-full bg-white border border-[rgba(0,0,0,0.1)] rounded-xl px-4 py-3.5 text-sm focus:ring-2 focus:ring-[#1A7A4A] focus:border-[#1A7A4A] outline-none transition-all placeholder:text-[#6B7280]/40"
+                className="w-full bg-white border border-[rgba(0,0,0,0.1)] rounded-[10px] px-4 py-3.5 text-sm focus:ring-2 focus:ring-[#1A7A4A] focus:border-[#1A7A4A] outline-none transition-all placeholder:text-[#6B7280]/40"
               />
             </div>
           </div>
 
-          <button className="pill-button w-full bg-[#0D1F14] text-white py-3.5 font-bold text-sm mt-4 shadow-lg hover:shadow-[#0D1F14]/20 transition-all active:scale-[0.98]">
+          <button className="pill-button w-full bg-[#0D1F14] text-white py-3.5 font-bold text-sm mt-4 hover:opacity-90 transition-all active:scale-[0.98]">
             Create account
           </button>
         </form>

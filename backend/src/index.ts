@@ -4,7 +4,6 @@ import cookieParser from "cookie-parser";
 import { pinoHttp } from "pino-http";
 
 import authRoutes from "./routes/auth.js";
-import blogRoutes from "./routes/blogRoutes.js";
 import { protect } from "./middlewares/authMiddleware.js";
 import logger from "./utils/logger.js";
 import { testConnection } from "../lib/prisma.js";
@@ -46,7 +45,6 @@ app.get("/", (req, res) => {
 });
 
 app.use("/auth", authRoutes);
-app.use("/blog", blogRoutes);
 
 app.get("/profile", protect, (req, res) => {
   res.json(successResponse({ user: req.user }, "Profile retrieved"));

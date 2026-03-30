@@ -31,7 +31,7 @@ export default function LoginPage() {
         </div>
 
         {error && (
-          <div className="mb-6 p-4 bg-[#FFF0F0] border border-[#FF3B30]/20 rounded-xl flex items-center gap-3 text-[#FF3B30] text-sm font-medium animate-in fade-in slide-in-from-top-2">
+          <div className="mb-6 p-4 bg-[#FFF0F0] border border-[#FF3B30]/20 rounded-[10px] flex items-center gap-3 text-[#FF3B30] text-sm font-medium animate-in fade-in slide-in-from-top-2">
             <AlertCircle size={18} />
             Invalid email or password. Please try again.
           </div>
@@ -51,7 +51,7 @@ export default function LoginPage() {
             <input
               type="email"
               placeholder="you@example.com"
-              className="w-full bg-white border border-[rgba(0,0,0,0.1)] rounded-xl px-4 py-3.5 text-sm focus:ring-2 focus:ring-[#1A7A4A] focus:border-[#1A7A4A] outline-none transition-all placeholder:text-[#6B7280]/40"
+              className="w-full bg-white border border-[rgba(0,0,0,0.1)] rounded-[10px] px-4 py-3.5 text-sm focus:ring-2 focus:ring-[#1A7A4A] focus:border-[#1A7A4A] outline-none transition-all placeholder:text-[#6B7280]/40"
               autoFocus
             />
           </div>
@@ -72,7 +72,7 @@ export default function LoginPage() {
               <input
                 type={showPassword ? "text" : "password"}
                 placeholder="••••••••"
-                className="w-full bg-white border border-[rgba(0,0,0,0.1)] rounded-xl px-4 py-3.5 text-sm focus:ring-2 focus:ring-[#1A7A4A] focus:border-[#1A7A4A] outline-none transition-all placeholder:text-[#6B7280]/40"
+                className="w-full bg-white border border-[rgba(0,0,0,0.1)] rounded-[10px] px-4 py-3.5 text-sm focus:ring-2 focus:ring-[#1A7A4A] focus:border-[#1A7A4A] outline-none transition-all placeholder:text-[#6B7280]/40"
               />
               <button
                 type="button"
@@ -84,7 +84,7 @@ export default function LoginPage() {
             </div>
           </div>
 
-          <button className="pill-button w-full bg-[#0D1F14] text-white py-3.5 font-bold text-sm mt-4 shadow-lg hover:shadow-[#0D1F14]/20 transition-all active:scale-[0.98]">
+          <button className="pill-button w-full bg-[#0D1F14] text-white py-3.5 font-bold text-sm mt-4 hover:opacity-90 transition-all active:scale-[0.98]">
             Log in
           </button>
         </form>

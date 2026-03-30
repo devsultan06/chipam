@@ -115,7 +115,7 @@ export default function ContributionDetail() {
             href="/dashboard/contributions"
             className="group flex items-center gap-2 text-sm font-bold text-[#6B7280] hover:text-[#1A7A4A] transition-colors"
           >
-            <div className="w-8 h-8 rounded-full bg-white border border-[rgba(26,122,74,0.1)] flex items-center justify-center group-hover:bg-[#F7F5EF] transition-all shadow-sm">
+            <div className="w-8 h-8 rounded-[8px] bg-white border border-[rgba(26,122,74,0.1)] flex items-center justify-center group-hover:bg-[#F7F5EF] transition-all shadow-sm">
               <ArrowLeft size={16} />
             </div>
             <span>My Contributions</span>
@@ -131,14 +131,14 @@ export default function ContributionDetail() {
         </div>
 
         {/* Hero Card */}
-        <div className="bg-white rounded-[40px] p-8 md:p-12 shadow-xl shadow-[rgba(0,0,0,0.05)] border border-[rgba(26,122,74,0.1)] relative overflow-hidden">
+        <div className="bg-white rounded-[10px] p-8 md:p-12 shadow-xl shadow-[rgba(0,0,0,0.05)] border border-[rgba(26,122,74,0.1)] relative overflow-hidden">
           {/* Subtle Glow Blob */}
           <div className="absolute top-[-50px] right-[-50px] w-64 h-64 bg-[#C8F275]/10 rounded-full blur-[80px] -z-0" />
 
           <div className="relative z-10 flex flex-col md:flex-row gap-12">
             <div className="flex-1 space-y-8">
               <div>
-                <span className="px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest text-[#1A7A4A] bg-[#E6F5ED] mb-6 inline-block shadow-sm">
+                <span className="px-3 py-1.5 rounded-[10px] text-[10px] font-black uppercase tracking-widest text-[#1A7A4A] bg-[#E6F5ED] mb-6 inline-block shadow-sm">
                   Active
                 </span>
                 <h1
@@ -147,7 +147,7 @@ export default function ContributionDetail() {
                 >
                   {contribution.name}
                 </h1>
-                <p className="text-[#6B7280] text-lg font-medium leading-relaxed max-w-2xl italic opacity-80">
+                <p className="text-[#6B7280] text-lg font-medium leading-relaxed max-w-2xl opacity-80">
                   {contribution.description}
                 </p>
               </div>
@@ -190,7 +190,7 @@ export default function ContributionDetail() {
 
               <div className="space-y-2">
                 <div className="flex justify-between items-center text-[11px] font-black uppercase tracking-widest">
-                  <span className="text-[#1A7A4A] bg-[#C8F275]/30 px-3 py-1 rounded-full">
+                  <span className="text-[#1A7A4A] bg-[#C8F275]/30 px-3 py-1 rounded-[10px]">
                     65% COMPLETED
                   </span>
                   <span className="text-[#6B7280] flex items-center gap-1">
@@ -198,12 +198,12 @@ export default function ContributionDetail() {
                     {contribution.expectedMembers} people paid
                   </span>
                 </div>
-                <div className="w-full h-4 bg-[#F7F5EF] rounded-full overflow-hidden shadow-inner">
+                <div className="w-full h-4 bg-[#F7F5EF] rounded-[10px] overflow-hidden shadow-inner">
                   <motion.div
                     initial={{ width: 0 }}
                     animate={{ width: "65%" }}
                     transition={{ duration: 1 }}
-                    className="h-full bg-[#1A7A4A] rounded-full shadow-[0_0_20px_rgba(26,122,74,0.3)]"
+                    className="h-full bg-[#1A7A4A] rounded-[10px]"
                   />
                 </div>
               </div>
@@ -212,7 +212,7 @@ export default function ContributionDetail() {
         </div>
 
         {/* Share Section */}
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 items-center bg-[#0D1F14] rounded-[32px] p-8 shadow-xl shadow-[#0D1F14]/20 border border-white/5 relative overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 items-center bg-[#0D1F14] rounded-[10px] p-8 border border-white/5 relative overflow-hidden">
           {/* Tile Grid Effect */}
           <div
             className="absolute inset-0 opacity-[0.03]"
@@ -239,25 +239,25 @@ export default function ContributionDetail() {
                   type="text"
                   value={contribution.link}
                   readOnly
-                  className="w-full bg-white/10 border border-white/10 rounded-2xl py-4 pl-4 pr-32 text-sm text-white font-mono outline-none group-hover:bg-white/[0.15] transition-all"
+                  className="w-full bg-white/10 border border-white/10 rounded-[10px] py-4 pl-4 pr-32 text-sm text-white font-mono outline-none group-hover:bg-white/[0.15] transition-all"
                 />
                 <button
                   onClick={handleCopy}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#C8F275] text-[#0D1F14] px-4 py-2.5 rounded-xl text-xs font-black uppercase tracking-widest flex items-center gap-2 hover:bg-white transition-all active:scale-[0.98]"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#C8F275] text-[#0D1F14] px-4 py-2.5 rounded-[10px] text-xs font-black uppercase tracking-widest flex items-center gap-2 hover:bg-white transition-all active:scale-[0.98]"
                 >
                   <Copy size={14} /> {copied ? "Copied!" : "Copy Link"}
                 </button>
               </div>
 
-              <button className="pill-button bg-[#25D366] text-white px-8 py-4 font-bold text-sm flex items-center justify-center gap-3 hover:shadow-lg hover:shadow-[#25D366]/20 transition-all active:scale-[0.98]">
+              <button className="pill-button bg-[#25D366] text-white px-8 py-4 font-bold text-sm flex items-center justify-center gap-3 transition-all active:scale-[0.98]">
                 <MessageCircle size={20} /> Share on WhatsApp
               </button>
             </div>
           </div>
 
           <div className="relative z-10 hidden md:block pl-10 border-l border-white/10">
-            <div className="w-32 h-32 bg-white rounded-3xl p-4 shadow-2xl scale-110">
-              <div className="w-full h-full bg-[#F7F5EF] rounded-xl flex items-center justify-center text-[#6B7280]">
+            <div className="w-32 h-32 bg-white rounded-[10px] p-4 shadow-2xl scale-110">
+              <div className="w-full h-full bg-[#F7F5EF] rounded-[8px] flex items-center justify-center text-[#6B7280]">
                 <span className="text-[10px] font-black uppercase tracking-widest text-center leading-none">
                   Scan to
                   <br />
@@ -279,7 +279,7 @@ export default function ContributionDetail() {
               {activeTab === "members" && (
                 <motion.div
                   layoutId="tab"
-                  className="absolute bottom-[-1px] left-0 right-0 h-1 bg-[#1A7A4A] rounded-full"
+                  className="absolute bottom-[-1px] left-0 right-0 h-1 bg-[#1A7A4A] rounded-[10px]"
                 />
               )}
             </button>
@@ -291,13 +291,13 @@ export default function ContributionDetail() {
               {activeTab === "payout" && (
                 <motion.div
                   layoutId="tab"
-                  className="absolute bottom-[-1px] left-0 right-0 h-1 bg-[#1A7A4A] rounded-full"
+                  className="absolute bottom-[-1px] left-0 right-0 h-1 bg-[#1A7A4A] rounded-[10px]"
                 />
               )}
             </button>
           </div>
 
-          <button className="pill-button px-5 py-2.5 bg-[#1A7A4A] text-white text-xs font-black uppercase tracking-widest flex items-center gap-2 hover:shadow-lg hover:shadow-[#1A7A4A]/20 transition-all">
+          <button className="pill-button px-5 py-2.5 bg-[#1A7A4A] text-white text-xs font-black uppercase tracking-widest flex items-center gap-2 transition-all">
             Remind all pending
           </button>
         </div>
@@ -310,7 +310,7 @@ export default function ContributionDetail() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
-              className="bg-white rounded-[40px] border border-[rgba(26,122,74,0.12)] overflow-hidden shadow-xl shadow-[rgba(0,0,0,0.03)]"
+              className="bg-white rounded-[10px] border border-[rgba(26,122,74,0.12)] overflow-hidden shadow-xl shadow-[rgba(0,0,0,0.03)]"
             >
               <div className="overflow-x-auto">
                 <table className="w-full text-left">
@@ -345,7 +345,7 @@ export default function ContributionDetail() {
                         <td className="px-8 py-6">
                           <div className="flex items-center gap-3">
                             <div
-                              className={`w-8 h-8 rounded-full flex items-center justify-center font-black text-[10px] ${member.status === "Paid" ? "bg-[#E6F5ED] text-[#1A7A4A]" : "bg-[#F0EBD8] text-[#D97706]"}`}
+                              className={`w-8 h-8 rounded-[8px] flex items-center justify-center font-black text-[10px] ${member.status === "Paid" ? "bg-[#E6F5ED] text-[#1A7A4A]" : "bg-[#F0EBD8] text-[#D97706]"}`}
                             >
                               {member.name.charAt(0)}
                             </div>
@@ -366,7 +366,7 @@ export default function ContributionDetail() {
                         </td>
                         <td className="px-8 py-6">
                           <span
-                            className={`px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest shadow-sm ${member.status === "Paid" ? "bg-[#E6F5ED] text-[#1A7A4A]" : "bg-[#F0EBD8] text-[#D97706]"}`}
+                            className={`px-3 py-1.5 rounded-[10px] text-[10px] font-black uppercase tracking-widest shadow-sm ${member.status === "Paid" ? "bg-[#E6F5ED] text-[#1A7A4A]" : "bg-[#F0EBD8] text-[#D97706]"}`}
                           >
                             {member.status}
                           </span>
@@ -383,7 +383,7 @@ export default function ContributionDetail() {
                         </td>
                         <td className="px-8 py-6">
                           {member.status === "Pending" ? (
-                            <button className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-[#D97706] border border-[#D97706]/20 px-3 py-1.5 rounded-full hover:bg-[#D97706] hover:text-white transition-all">
+                            <button className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-[#D97706] border border-[#D97706]/20 px-3 py-1.5 rounded-[10px] hover:bg-[#D97706] hover:text-white transition-all">
                               Remind <Mail size={14} />
                             </button>
                           ) : (
@@ -406,9 +406,9 @@ export default function ContributionDetail() {
               key="payout"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              className="bg-white rounded-[40px] p-12 border border-[rgba(26,122,74,0.12)] shadow-xl text-center"
+              className="bg-white rounded-[10px] p-12 border border-[rgba(26,122,74,0.12)] shadow-xl text-center"
             >
-              <div className="w-20 h-20 bg-[#C8F275]/20 rounded-3xl flex items-center justify-center text-[#1A7A4A] mx-auto mb-8">
+              <div className="w-20 h-20 bg-[#C8F275]/20 rounded-[10px] flex items-center justify-center text-[#1A7A4A] mx-auto mb-8">
                 <TrendingUp size={40} />
               </div>
               <h3
@@ -428,7 +428,7 @@ export default function ContributionDetail() {
                   </span>
                 </div>
                 <div className="flex justify-between items-center py-4 border-b border-[rgba(26,122,74,0.1)] text-[#FF3B30]">
-                  <span className="text-sm font-bold opacity-70 italic">
+                  <span className="text-sm font-bold opacity-70">
                     Platform Fees (7 × ₦50)
                   </span>
                   <span className="text-sm font-black">-₦350.00</span>
@@ -449,7 +449,7 @@ export default function ContributionDetail() {
                 </div>
               </div>
 
-              <button className="pill-button bg-[#1A7A4A] text-white px-12 py-5 font-black uppercase tracking-widest shadow-2xl shadow-[#1A7A4A]/30 hover:scale-[1.02] transition-all">
+              <button className="pill-button bg-[#1A7A4A] text-white px-12 py-5 font-black uppercase tracking-widest hover:scale-[1.02] transition-all">
                 Request Withdrawal
               </button>
               <p className="mt-8 text-[10px] text-[#6B7280] font-bold uppercase tracking-widest opacity-60">

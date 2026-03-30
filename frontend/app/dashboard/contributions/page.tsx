@@ -102,14 +102,14 @@ export default function ContributionsList() {
       <div className="space-y-8">
         {/* Filters and Search */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="p-1 bg-white border border-[rgba(26,122,74,0.1)] rounded-2xl flex items-center shadow-sm w-full sm:w-auto">
+          <div className="p-1 bg-white border border-[rgba(26,122,74,0.1)] rounded-[10px] flex items-center shadow-sm w-full sm:w-auto">
             {filters.map((filter) => (
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest transition-all ${
+                className={`px-4 py-2 rounded-[10px] text-xs font-black uppercase tracking-widest transition-all ${
                   activeFilter === filter
-                    ? "bg-[#1A7A4A] text-white shadow-md shadow-[#1A7A4A]/20"
+                    ? "bg-[#1A7A4A] text-white"
                     : "text-[#6B7280] hover:bg-[#F7F5EF] hover:text-[#1A1A1A]"
                 }`}
               >
@@ -126,7 +126,7 @@ export default function ContributionsList() {
             <input
               type="text"
               placeholder="Search contribution..."
-              className="w-full bg-white border border-[rgba(26,122,74,0.08)] rounded-xl py-3 pl-12 pr-4 text-xs font-bold text-[#1A1A1A] outline-none shadow-sm focus:ring-2 focus:ring-[#1A7A4A] transition-all"
+              className="w-full bg-white border border-[rgba(26,122,74,0.08)] rounded-[10px] py-3 pl-12 pr-4 text-xs font-bold text-[#1A1A1A] outline-none shadow-sm focus:ring-2 focus:ring-[#1A7A4A] transition-all"
             />
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function ContributionsList() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-white rounded-[32px] p-8 border border-[rgba(26,122,74,0.1)] shadow-sm hover:shadow-xl transition-all group relative overflow-hidden"
+                className="bg-white rounded-[10px] p-8 border border-[rgba(26,122,74,0.1)] shadow-sm hover:shadow-xl transition-all group relative overflow-hidden"
               >
                 {/* Status Dot */}
                 <div className="absolute top-0 right-0 p-4">
@@ -176,7 +176,7 @@ export default function ContributionsList() {
                           style={{ fontFamily: "Syne, sans-serif" }}
                         >
                           ₦{(c.collected / 1000).toFixed(1)}k
-                          <span className="text-sm font-normal text-[#6B7280] tracking-normal ml-2 opacity-50">
+                          <span className="text-sm font-normal text-[#6B7280] tracking-normal ml-2 ">
                             / ₦{(c.target / 1000).toFixed(1)}k
                           </span>
                         </h4>
@@ -204,7 +204,7 @@ export default function ContributionsList() {
 
                 <div className="pt-8 border-t border-[rgba(26,122,74,0.08)] flex items-center justify-between">
                   <div>
-                    <p className="text-[10px] font-black uppercase tracking-widest text-[#6B7280] mb-1 opacity-60 italic">
+                    <p className="text-[10px] font-black uppercase tracking-widest text-[#6B7280] mb-1 ">
                       Deadline
                     </p>
                     <span className="text-sm font-bold text-[#1A1A1A]">
@@ -214,11 +214,11 @@ export default function ContributionsList() {
                   <div className="flex items-center gap-2">
                     <Link
                       href={`/dashboard/contributions/1`}
-                      className="px-5 py-3 text-xs font-black uppercase tracking-widest text-[#1A7A4A] border border-[#1A7A4A]/20 rounded-xl hover:bg-[#F7F5EF] transition-all"
+                      className="px-5 py-3 text-xs font-black uppercase tracking-widest text-[#1A7A4A] border border-[#1A7A4A]/20 rounded-[10px] hover:bg-[#F7F5EF] transition-all"
                     >
                       View
                     </Link>
-                    <button className="px-5 py-3 text-xs font-black uppercase tracking-widest bg-[#1A7A4A] text-white rounded-xl flex items-center gap-2 hover:shadow-lg hover:shadow-[#1A7A4A]/20 transition-all active:scale-[0.98]">
+                    <button className="px-5 py-3 text-xs font-black uppercase tracking-widest bg-[#1A7A4A] text-white rounded-[10px] flex items-center gap-2 hover:bg-[#1A7A4A]/90 transition-all active:scale-[0.98]">
                       Share <Share2 size={14} />
                     </button>
                   </div>
@@ -233,7 +233,7 @@ export default function ContributionsList() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="flex flex-col items-center justify-center py-32 bg-white rounded-[40px] border border-dashed border-[rgba(26,122,74,0.2)]"
+            className="flex flex-col items-center justify-center py-32 bg-white rounded-[10px] border border-dashed border-[rgba(26,122,74,0.2)]"
           >
             <div className="text-8xl mb-6">🏝️</div>
             <h3
@@ -248,7 +248,7 @@ export default function ContributionsList() {
             </p>
             <button
               onClick={() => setActiveFilter("All")}
-              className="pill-button bg-[#0D1F14] text-white px-10 py-4 font-bold text-sm shadow-xl transition-all active:scale-[0.98]"
+              className="bg-[#0D1F14] text-white px-10 py-4 rounded-[10px] font-bold text-sm transition-all active:scale-[0.98]"
             >
               Bring them back
             </button>

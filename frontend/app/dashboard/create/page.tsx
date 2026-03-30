@@ -49,10 +49,7 @@ export default function CreateContribution() {
           <ArrowLeft size={16} /> Back to dashboard
         </Link>
 
-        <div className="bg-white rounded-[40px] p-8 md:p-12 shadow-2xl shadow-[rgba(0,0,0,0.05)] border border-[rgba(26,122,74,0.1)] relative overflow-hidden">
-          {/* Subtle Glow Header */}
-          <div className="absolute top-0 inset-x-0 h-2 bg-gradient-to-r from-[#1A7A4A] via-[#C8F275] to-[#1A7A4A]" />
-
+        <div className="bg-white rounded-[10px] p-8 md:p-12 shadow-2xl shadow-[rgba(0,0,0,0.05)] border border-[rgba(26,122,74,0.1)] relative overflow-hidden">
           <div className="mb-12">
             <h1
               className="text-3xl md:text-4xl font-black text-[#1A1A1A] mb-4 tracking-tighter"
@@ -88,7 +85,7 @@ export default function CreateContribution() {
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
                   }
-                  className="w-full bg-[#F7F5EF] border-none rounded-2xl py-5 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
+                  className="w-full bg-[#F7F5EF] border-none rounded-[10px] py-5 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
                 />
               </div>
 
@@ -103,7 +100,7 @@ export default function CreateContribution() {
                   onChange={(e) =>
                     setFormData({ ...formData, description: e.target.value })
                   }
-                  className="w-full bg-[#F7F5EF] border-none rounded-2xl py-5 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all resize-none"
+                  className="w-full bg-[#F7F5EF] border-none rounded-[10px] py-5 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all resize-none"
                 />
               </div>
             </div>
@@ -134,7 +131,7 @@ export default function CreateContribution() {
                       onChange={(e) =>
                         setFormData({ ...formData, amount: e.target.value })
                       }
-                      className="w-full bg-[#F7F5EF] border-none rounded-2xl py-5 pl-10 pr-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
+                      className="w-full bg-[#F7F5EF] border-none rounded-[10px] py-5 pl-10 pr-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
                     />
                   </div>
                 </div>
@@ -158,7 +155,7 @@ export default function CreateContribution() {
                           expectedMembers: e.target.value,
                         })
                       }
-                      className="w-full bg-[#F7F5EF] border-none rounded-2xl py-5 pl-14 pr-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
+                      className="w-full bg-[#F7F5EF] border-none rounded-[10px] py-5 pl-14 pr-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
                     />
                   </div>
                 </div>
@@ -183,12 +180,12 @@ export default function CreateContribution() {
                     onChange={(e) =>
                       setFormData({ ...formData, deadline: e.target.value })
                     }
-                    className="w-full bg-[#F7F5EF] border-none rounded-2xl py-5 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
+                    className="w-full bg-[#F7F5EF] border-none rounded-[10px] py-5 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
                   />
                 </div>
 
                 {/* Live Preview Card */}
-                <div className="mt-6 p-6 bg-[#E6F5ED] rounded-3xl border border-[#1A7A4A]/10">
+                <div className="mt-6 p-6 bg-[#E6F5ED] rounded-[10px] border border-[#1A7A4A]/10">
                   <p className="text-[10px] font-black text-[#1A7A4A] uppercase tracking-widest mb-4 flex items-center gap-2">
                     <Info size={12} /> Target Estimate
                   </p>
@@ -219,7 +216,7 @@ export default function CreateContribution() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`pill-button flex-1 bg-[#0D1F14] text-[#C8F275] py-5 px-10 font-bold text-base flex items-center justify-center gap-3 shadow-2xl shadow-[#0D1F14]/20 hover:scale-[1.02] transition-all active:scale-[0.98] w-full ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""}`}
+                className={`flex-1 bg-[#0D1F14] text-[#C8F275] py-5 px-10 rounded-[10px] font-bold text-base flex items-center justify-center gap-3 hover:scale-[1.02] transition-all active:scale-[0.98] w-full ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""}`}
               >
                 {isSubmitting ? (
                   <motion.div

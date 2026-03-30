@@ -30,7 +30,7 @@ const Hero = () => (
         <div className="flex flex-wrap gap-4 mb-12">
           <Link
             href="/signup"
-            className="pill-button bg-[#0D1F14] text-white px-7 py-3.5 font-bold flex items-center justify-center gap-2 text-sm shadow-xl shadow-[#0D1F14]/20 hover:scale-[1.02] transition-all w-fit"
+            className="pill-button bg-[#0D1F14] text-white px-7 py-3.5 font-bold flex items-center justify-center gap-2 text-sm hover:scale-[1.02] transition-all w-fit"
           >
             Create a contribution
           </Link>
@@ -409,7 +409,7 @@ const CTA = () => (
       </p>
       <Link
         href="/signup"
-        className="pill-button bg-white text-[#1A7A4A] px-8 py-4 text-base font-bold flex items-center justify-center gap-3 mx-auto w-fit shadow-2xl hover:scale-[1.05] transition-all"
+        className="pill-button bg-white text-[#1A7A4A] px-8 py-4 text-base font-bold flex items-center justify-center gap-3 mx-auto w-fit hover:scale-[1.05] transition-all"
       >
         Create your first contribution <ArrowRight size={20} />
       </Link>

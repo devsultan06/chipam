@@ -74,9 +74,9 @@ export default function PublicPaymentPage({
           </div>
         </div>
 
-        <div className="bg-white rounded-[40px] shadow-2xl shadow-[rgba(0,0,0,0.05)] border border-[rgba(26,122,74,0.1)] overflow-hidden">
+        <div className="bg-white rounded-[10px] shadow-2xl shadow-[rgba(0,0,0,0.05)] border border-[rgba(26,122,74,0.1)] overflow-hidden">
           {/* Header Section */}
-          <div className="p-8 md:p-12 border-b border-[rgba(26,122,74,0.08)] bg-gradient-to-b from-[#E6F5ED]/30 to-white">
+          <div className="p-8 md:p-12 border-b border-[rgba(26,122,74,0.08)] bg-white">
             <h1
               className="text-3xl md:text-4xl font-black text-[#1A1A1A] mb-4 tracking-tighter text-balance"
               style={{ fontFamily: "Syne, sans-serif" }}
@@ -119,12 +119,12 @@ export default function PublicPaymentPage({
                     initial={{ width: 0 }}
                     animate={{ width: "70%" }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
-                    className="h-full bg-[#1A7A4A] rounded-full shadow-[0_0_15px_rgba(26,122,74,0.3)]"
+                    className="h-full bg-[#1A7A4A] rounded-full"
                   />
                 </div>
               </div>
 
-              <div className="p-5 bg-[#F0EBD8] rounded-3xl border border-[#D97706]/10 flex gap-4">
+              <div className="p-5 bg-[#F0EBD8] rounded-[10px] border border-[#D97706]/10 flex gap-4">
                 <Info size={20} className="text-[#D97706] shrink-0" />
                 <div>
                   <p className="text-[10px] font-black uppercase tracking-widest text-[#D97706] mb-1">
@@ -162,7 +162,7 @@ export default function PublicPaymentPage({
                   type="text"
                   placeholder="e.g. Amaka Obi"
                   required
-                  className="w-full bg-[#F7F5EF] border-none rounded-2xl py-4 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
+                  className="w-full bg-[#F7F5EF] border-none rounded-[10px] py-4 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
                 />
               </div>
 
@@ -174,11 +174,11 @@ export default function PublicPaymentPage({
                   type="email"
                   placeholder="you@example.com"
                   required
-                  className="w-full bg-[#F7F5EF] border-none rounded-2xl py-4 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
+                  className="w-full bg-[#F7F5EF] border-none rounded-[10px] py-4 px-6 text-sm font-bold text-[#1A1A1A] outline-none shadow-inner focus:ring-2 focus:ring-[#1A7A4A] transition-all"
                 />
               </div>
 
-              <div className="p-6 bg-[#0D1F14] rounded-3xl text-center space-y-2 shadow-xl shadow-[#0D1F14]/20">
+              <div className="p-6 bg-[#0D1F14] rounded-[10px] text-center space-y-2">
                 <p className="text-[10px] font-black uppercase tracking-widest text-[#C8F275] opacity-60">
                   Amount to Pay
                 </p>
@@ -193,7 +193,7 @@ export default function PublicPaymentPage({
               <button
                 type="submit"
                 disabled={isProcessing}
-                className={`pill-button w-full bg-[#1A7A4A] text-[#C8F275] py-5 px-10 font-bold text-base flex items-center justify-center gap-3 shadow-2xl shadow-[#1A7A4A]/20 hover:scale-[1.02] transition-all active:scale-[0.98] ${isProcessing ? "opacity-70 cursor-not-allowed" : ""}`}
+                className={`pill-button w-full bg-[#1A7A4A] text-[#C8F275] py-5 px-10 font-bold text-base flex items-center justify-center gap-3 hover:scale-[1.02] transition-all active:scale-[0.98] ${isProcessing ? "opacity-70 cursor-not-allowed" : ""}`}
               >
                 {isProcessing ? (
                   <motion.div
