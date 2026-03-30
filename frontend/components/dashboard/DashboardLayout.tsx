@@ -104,7 +104,7 @@ export default function DashboardLayout({
       </aside>
 
       {/* Main Content Area */}
-      <div className="flex-1 md:ml-[260px] flex flex-col min-h-screen">
+      <div className="flex-1 md:ml-[260px] flex flex-col min-h-screen min-w-0 w-full overflow-x-hidden">
         {/* Top Bar */}
         <header className="h-16 md:h-20 bg-[#F7F5EF]/80 backdrop-blur-md sticky top-0 z-30 px-4 md:px-10 flex items-center justify-between">
           <div className="flex items-center gap-3 md:gap-4">
