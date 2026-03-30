@@ -69,9 +69,6 @@ export default function PublicPaymentPage({
           >
             chipam
           </Link>
-          <div className="flex items-center justify-center gap-2 text-[10px] font-black uppercase tracking-widest text-[#6B7280] opacity-40">
-            <ShieldCheck size={12} /> SECURE PAYSTACK CHECKOUT
-          </div>
         </div>
 
         <div className="bg-white rounded-[10px] shadow-2xl shadow-[rgba(0,0,0,0.05)] border border-[rgba(26,122,74,0.1)] overflow-hidden">
@@ -83,7 +80,7 @@ export default function PublicPaymentPage({
             >
               {contribution.name}
             </h1>
-            <p className="text-[#6B7280] text-sm font-medium leading-relaxed max-w-lg mb-8 italic opacity-80">
+            <p className="text-[#6B7280] text-sm font-medium leading-relaxed max-w-lg mb-8 opacity-80">
               {contribution.description}
             </p>
 

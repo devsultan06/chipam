@@ -25,7 +25,7 @@ export default function LoginPage() {
           >
             Welcome back
           </h2>
-          <p className="text-[#6B7280] font-medium text-sm italic opacity-70 italic">
+          <p className="text-[#6B7280] font-medium text-sm opacity-70">
             "No more drama over who paid." Ready to collect?
           </p>
         </div>

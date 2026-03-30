@@ -38,7 +38,7 @@ export default function ContributionDetail() {
     deadline: "Dec 30, 2026",
     daysLeft: 5,
     status: "Active",
-    link: "chipam.co/pay/final-year-dinner-2026",
+    link: "localhost:3000/pay/final-year-dinner-2026",
   };
 
   const members = [

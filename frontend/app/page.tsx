@@ -250,7 +250,7 @@ const Pricing = () => (
     <div className="max-w-7xl mx-auto text-center mb-16">
       <span className="section-label text-[#C8F275]">Pricing</span>
       <h2 className="text-4xl md:text-6xl text-white mb-4">No upfront cost.</h2>
-      <h2 className="text-4xl md:text-3xl text-white/80 mb-4 opacity-70 italic">
+      <h2 className="text-4xl md:text-3xl text-white/80 mb-4 opacity-70">
         We only earn when you collect.
       </h2>
       <p className="text-lg text-white/60 max-w-2xl mx-auto font-light leading-relaxed">
@@ -385,7 +385,7 @@ const Testimonials = () => (
               <Star key={s} size={16} fill="currentColor" />
             ))}
           </div>
-          <p className="text-lg text-[#1A1A1A] mb-8 leading-relaxed font-light italic">
+          <p className="text-lg text-[#1A1A1A] mb-8 leading-relaxed font-light">
             "{item.text}"
           </p>
           <div className="mt-auto">
