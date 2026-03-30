@@ -147,22 +147,20 @@ export default function ContributionsList() {
                 transition={{ delay: i * 0.1 }}
                 className="bg-white rounded-[10px] p-6 md:p-8 border border-[rgba(26,122,74,0.1)] shadow-sm hover:shadow-xl transition-all group relative overflow-hidden"
               >
-                {/* Status Dot */}
-                <div className="absolute top-0 right-0 p-4">
-                  <span
-                    className={`px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest whitespace-nowrap shadow-sm ${statusColors[c.status as keyof typeof statusColors]}`}
-                  >
-                    {c.status}
-                  </span>
-                </div>
-
                 <div className="mb-8">
-                  <h3
-                    className="text-2xl font-black text-[#1A1A1A] mb-8 leading-none"
-                    style={{ fontFamily: "Lexend, sans-serif" }}
-                  >
-                    {c.name}
-                  </h3>
+                  <div className="flex items-start justify-between gap-4 mb-6">
+                    <h3
+                      className="text-2xl font-black text-[#1A1A1A] leading-tight flex-1"
+                      style={{ fontFamily: "Lexend, sans-serif" }}
+                    >
+                      {c.name}
+                    </h3>
+                    <span
+                      className={`flex-shrink-0 px-3 py-1.5 rounded-[10px] text-[10px] font-black uppercase tracking-widest whitespace-nowrap shadow-sm h-fit ${statusColors[c.status as keyof typeof statusColors]}`}
+                    >
+                      {c.status}
+                    </span>
+                  </div>
 
                   <div className="space-y-4">
                     <div className="flex items-end justify-between mb-4">
