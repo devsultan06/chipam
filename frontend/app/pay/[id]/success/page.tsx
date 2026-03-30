@@ -17,13 +17,7 @@ export default function PaymentSuccessPage({
 }) {
   return (
     <div className="min-h-screen bg-[#F7F5EF] flex flex-col items-center justify-center p-6 text-center relative overflow-hidden">
-      {/* Dynamic Background Elements */}
-      <motion.div
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#C8F275]/10 rounded-full blur-[100px] -z-0"
-      />
+ 
 
       <div className="max-w-md w-full relative z-10 space-y-10">
         <Link
@@ -34,7 +28,7 @@ export default function PaymentSuccessPage({
           chipam
         </Link>
 
-        <div className="bg-white rounded-[40px] p-10 md:p-12 shadow-2xl shadow-[rgba(26,122,74,0.1)] border border-[rgba(26,122,74,0.08)] transform hover:scale-[1.01] transition-transform">
+        <div className="bg-white rounded-[10px] p-10 md:p-12 shadow-2xl shadow-[rgba(26,122,74,0.1)] border border-[rgba(26,122,74,0.08)] transform hover:scale-[1.01] transition-transform">
           <motion.div
             initial={{ scale: 0, rotate: -45 }}
             animate={{ scale: 1, rotate: 0 }}
@@ -44,7 +38,7 @@ export default function PaymentSuccessPage({
               stiffness: 200,
               delay: 0.2,
             }}
-            className="w-24 h-24 bg-[#E6F5ED] rounded-[32px] flex items-center justify-center text-[#1A7A4A] mx-auto mb-8 shadow-inner"
+            className="w-24 h-24 bg-[#E6F5ED] rounded-[10px] flex items-center justify-center text-[#1A7A4A] mx-auto mb-8 shadow-inner"
           >
             <CheckCircle2 size={48} />
           </motion.div>

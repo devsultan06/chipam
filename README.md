@@ -1,10 +1,10 @@
-# Chipam 💸
+# ![Chipam Logo](frontend/public/icon.svg)
+# Chipam
 
 **No more drama over who paid.** Chipam is a premium, student-focused financial tool designed to simplify group contributions. Whether it's departmental dues, birthday pools, or hostel house expenses, Chipam handles the collection, tracking, and reminders so you don't have to be the "bad guy."
 
-![Chipam Logo](frontend/public/icon.svg)
 
-## ✨ Features
+## Features
 
 - **Instant Collection Links:** Create a contribution and get a shareable link in seconds. No account required for members to pay.
 - **Paystack Integrated:** Secure payments via Card, Bank Transfer, or USSD—optimized for the Nigerian market.
@@ -12,7 +12,7 @@
 - **Automated Reminders:** Stop chasing people on WhatsApp. Send automated, professional reminders with one click.
 - **Premium UI/UX:** A high-end, clean aesthetic with a strict 10px design language, Syne typography, and buttery-smooth Framer Motion transitions.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 ### Frontend
 
@@ -63,7 +63,7 @@
    npm run dev
    ```
 
-## 🎨 Design Philosophy
+## Design Philosophy
 
 Chipam follows a **"Premium Flat"** design language:
 
