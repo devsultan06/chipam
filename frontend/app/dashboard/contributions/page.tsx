@@ -131,7 +131,7 @@ export default function ContributionsList() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {filteredContributions.map((c, i) => {
             const statusColors = {
               Active: "bg-[#E6F5ED] text-[#1A7A4A]",
